@@ -1,0 +1,41 @@
+#welcome-section {  
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: calc(100vh - 5rem);
+    max-width: 1700px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 5rem;
+    box-shadow: 3px 3px 5px 6px rgba(0,0,0,.8);
+    text-align: center;
+    @include mq('large') {
+        grid-template-columns: 1fr 1fr;
+    }
+} 
+
+.welcome-section__img {
+    grid-area: 1/1/2/4; 
+    padding: 1rem;
+    background-image: url(../images/me.png);
+    color: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000; 
+    @include mq('large') {
+        grid-area: 1/1/2/2; 
+    }
+} 
+
+.welcome-section__text {
+    grid-area: 1/1/2/4; 
+    color: #fff;
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+    opacity: .7;
+    @include mq('large') {
+        grid-area: 1/2/2/4;
+    }
+    // background-image: linear-gradient( #da4453,#89216b);
+}

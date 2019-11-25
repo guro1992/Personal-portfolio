@@ -1,0 +1,14 @@
+{
+  "name": "fcc-porftolio",
+  "version": "1.0.0",
+  "description": "writing portfolio for FCC cerftificate",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass assets/scss/main.scss assets/css/main.css -w"
+  },
+  "author": "guram dgebuadze",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
