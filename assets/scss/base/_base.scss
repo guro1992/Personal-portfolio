@@ -2,8 +2,26 @@
     box-sizing: border-box;
 }
 
+html { 
+    font-size: 62.5%;
+    @include mq('xsmall'){
+        font-size: 40%;
+    }
+    @include mq('small') {
+        font-size: 55%;
+    }
+    @include mq('large') {
+        font-size: 62.5%;
+    }
+}
+
 body {
     font: 1.6rem/1.5 Helvetica, sans-serif;
+    color: #000;
+}
+
+h1 {
+    font-size: 4rem;
 }
 
 img {
@@ -16,7 +34,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 
 a:hover {

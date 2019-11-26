@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- Fontawasame -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <script src="assets/js/all.min.js"></script>
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <script defer src="assets/js/bootstrap.bundle.min.js"></script>
@@ -22,7 +26,7 @@
     <header class="header">
         <nav id="navbar">
             <ul>
-                <li><a href="#welcome-section">About me</a></li>
+                <li><a href="#welcome-section">About Me</a></li>
                 <li><a href="#projects">Work</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -31,7 +35,8 @@
 
     <main class="main">
         <section id="welcome-section">
-            <div class="welcome-section__img"></div>
+            <div class="welcome-section__img">
+            </div>
         
             <div class="welcome-section__text d-flex align-items-center justify-content-center flex-column">
                 <h1 class="project-tile text-center">Hi I am Guram Dgebuadze</h1>
@@ -39,15 +44,50 @@
             </div>
         </section>
 
-        <section class='py-5 my-projects'>
+        <section id='projects'  class='my-projects'>
+            
             <h1 class="text-center">Some of my projects</h1>
 
-            <div id='projects' class="my-projects__examples">
-                <a href="https://guro1992.github.io/Rico-credit/">
-                    <!-- <img src="" alt=""> -->
+            <div class="project-tile text-center">
+                <a href="https://guro1992.github.io/Rico-credit/" target="_blank">
+                    <img src="assets/images/Rico-credit.jpg" alt="Rico-credit page">
+                    <p>Rico-credit page</p>
+                </a>
+
+                <a href="https://guro1992.github.io/Services/" target="_blank">
+                    <img src="assets/images/services.jpg" alt="services page">
+                    <p>Brockers services page</p>
+                </a>
+
+                <a href="https://guro1992.github.io/FCC-Original-Trombones/" target="_blank">
+                    <img src="assets/images/original-trombones.jpg" alt="original-trombones page">
+                    <p>Original-trombones page</p>
+                </a>
+
+                <a href="https://guro1992.github.io/brockers/" target="_blank">
+                    <img src="assets/images/brockers.jpg" alt="brockers page">
+                    <p>Brockers page</p>
+                </a>
+                
+                <a href="https://guro1992.github.io/FCC-survey-form/" target="_blank">
+                    <img src="assets/images/survey-form.jpg" alt="survey-form page">
+                    <p>Survey-form page</p>
+                </a>
+
+                <a href="https://guro1992.github.io/Omedia/" target="_blank">
+                    <img src="assets/images/crypto-market.jpg" alt="crypto-market page">
+                    <p>Crypto-market page</p>
                 </a>
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <a href="https://www.facebook.com/gurami.dgebuadze" target="_blank"><i class="fab fa-facebook"></i>Facebook</a>
+        <a href="https://github.com/guro1992" target="_blank"><i class="fab fa-github"></i>Github</a>
+        <a href="https://www.freecodecamp.org/learn" target="_blank"><i class="fab fa-free-code-camp"></i>freecodecamp</a>
+        <a href="mailto:guramidgebuadze@gmail.com" target="_blank"><i class="fas fa-envelope-open-text"></i>Mail</a>
+        <a href="tel: 551 000062" target="_blank"><i class="fas fa-mobile-alt"></i>Call me</a>
+    </footer>
 </body>
 </html>

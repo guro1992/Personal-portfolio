@@ -2,23 +2,24 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: calc(100vh - 5rem);
+    grid-template-rows: calc(100vh - 8rem);
     max-width: 1700px;
-    width: 90%;
     margin: 0 auto;
-    padding-top: 5rem;
+    padding-top: 8rem;
     box-shadow: 3px 3px 5px 6px rgba(0,0,0,.8);
     text-align: center;
+    @include mq('small') {
+        width: 95%;
+    }
     @include mq('large') {
         grid-template-columns: 1fr 1fr;
+        width: 90%;
     }
 } 
 
 .welcome-section__img {
     grid-area: 1/1/2/4; 
-    padding: 1rem;
     background-image: url(../images/me.png);
-    color: #000;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -29,13 +30,14 @@
 } 
 
 .welcome-section__text {
+    font-size: 2rem;
+    padding: 1rem;
     grid-area: 1/1/2/4; 
-    color: #fff;
-    background-color: #000000;
-    background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+    background-color: #000000;   
+    background-image: linear-gradient(#bdc3c7 -20%, #2c3e50 74%);
     opacity: .7;
     @include mq('large') {
-        grid-area: 1/2/2/4;
+        grid-area: 1/2/2/3; 
+        opacity: .8;
     }
-    // background-image: linear-gradient( #da4453,#89216b);
 }
