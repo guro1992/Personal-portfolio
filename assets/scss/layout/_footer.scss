@@ -1,20 +1,41 @@
 .footer {
-    background-image: url(../images/social-network.jpg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 7rem 1rem;
-    font-size: 4rem;
+    background-color: #001f3f;
+    padding: 7rem 3rem;
+    padding-bottom: 3.5rem;
 
     & a { 
         display: inline-block; 
         padding: 2rem 0;
         margin-right: 2rem;
-        background-color: blue;
-        border-radius: 5px;
     }
+
+    & hr {
+        background-color: grey;
+    }
+}
+
+#contact {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 4rem;
+    padding-bottom: 3.5rem;
+}
+
+#profile-link {
+    color: #000;
+}
+
+.fa-facebook {
+    color:rgb(59, 89, 152);
+}
+ 
+.fa-free-code-camp {
+    color: green;
+}
+
+.fa-envelope-open-text {
+    color: red;
 }

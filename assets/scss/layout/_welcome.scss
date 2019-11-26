@@ -33,11 +33,13 @@
     font-size: 2rem;
     padding: 1rem;
     grid-area: 1/1/2/4; 
+    box-shadow: inset 400px 400px 350px rgba(0,0,0, .8);
     background-color: #000000;   
     background-image: linear-gradient(#bdc3c7 -20%, #2c3e50 74%);
     opacity: .7;
     @include mq('large') {
         grid-area: 1/2/2/3; 
-        opacity: .8;
+        opacity: 1;
+        background-image: url(../images/welcome-bg.jpg);
     }
 }

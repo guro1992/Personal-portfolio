@@ -21,13 +21,11 @@
         justify-content: center;
         align-items: center;
 
-        & li {
+        & a {
             padding: 0 1.5rem;
-            border-right: 2px solid #fff;
-
-            &:last-child {
-                border-right: none;
-            }
+            background-color: #3D9970;
+            border-radius: 10px;
+            margin-right: 10px;
         }
     }
 }

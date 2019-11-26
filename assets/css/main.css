@@ -14,8 +14,8 @@ html {
       font-size: 62.5%; } }
 
 body {
-  font: 1.6rem/1.5 Helvetica, sans-serif;
-  color: #000; }
+  font: 1.6rem/1.5 'Open Sans', sans-serif;
+  color: #fff; }
 
 h1 {
   font-size: 4rem; }
@@ -28,7 +28,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #000; }
+  color: #fff; }
 
 a:hover {
   text-decoration: none;
@@ -54,11 +54,11 @@ a:hover {
     list-style-type: none;
     justify-content: center;
     align-items: center; }
-    #navbar ul li {
+    #navbar ul a {
       padding: 0 1.5rem;
-      border-right: 2px solid #fff; }
-      #navbar ul li:last-child {
-        border-right: none; }
+      background-color: #3D9970;
+      border-radius: 10px;
+      margin-right: 10px; }
 
 #welcome-section {
   display: grid;
@@ -93,13 +93,15 @@ a:hover {
   font-size: 2rem;
   padding: 1rem;
   grid-area: 1/1/2/4;
+  box-shadow: inset 400px 400px 350px rgba(0, 0, 0, 0.8);
   background-color: #000000;
   background-image: linear-gradient(#bdc3c7 -20%, #2c3e50 74%);
   opacity: .7; }
   @media screen and (min-width: 992px) {
     .welcome-section__text {
       grid-area: 1/2/2/3;
-      opacity: .8; } }
+      opacity: 1;
+      background-image: url(../images/welcome-bg.jpg); } }
 
 .my-projects {
   background-image: linear-gradient(#bdc3c7, #2c3e50);
@@ -133,19 +135,33 @@ a:hover {
         font-size: 1.6rem; } }
 
 .footer {
-  background-image: url(../images/social-network.jpg);
-  background-size: cover;
-  background-position: center;
+  background-color: #001f3f;
+  padding: 7rem 3rem;
+  padding-bottom: 3.5rem; }
+  .footer a {
+    display: inline-block;
+    padding: 2rem 0;
+    margin-right: 2rem; }
+  .footer hr {
+    background-color: grey; }
+
+#contact {
   display: flex;
   height: auto;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 7rem 1rem;
-  font-size: 4rem; }
-  .footer a {
-    display: inline-block;
-    padding: 2rem 0;
-    margin-right: 2rem;
-    background-color: blue;
-    border-radius: 5px; }
+  font-size: 4rem;
+  padding-bottom: 3.5rem; }
+
+#profile-link {
+  color: #000; }
+
+.fa-facebook {
+  color: #3b5998; }
+
+.fa-free-code-camp {
+  color: green; }
+
+.fa-envelope-open-text {
+  color: red; }
